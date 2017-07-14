@@ -315,7 +315,9 @@
     "wrappy": "^1.0.2",
     "whatwg-fetch": "^2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.2.0"
+  },
   "scripts": {
     "test": "test",
     "dev": "next"
