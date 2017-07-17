@@ -317,7 +317,7 @@
   },
   "devDependencies": {
     "eslint": "^4.2.0",
-    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-prettier": "^2.1.2",
     "eslint-plugin-react": "^7.1.0",
@@ -326,7 +326,8 @@
   "scripts": {
     "test": "test",
     "dev": "next",
-    "lint": "eslint . --format node_modules/eslint-friendly-formatter"
+    "eslint": "eslint pages",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
