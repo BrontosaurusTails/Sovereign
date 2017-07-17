@@ -1,15 +1,20 @@
 {
     "env": {
         "browser": true,
-        "commonjs": true,
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module"
-    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "plugins": [
+        "prettier",
+        "react",
+        "import"
+    ],
     "rules": {
+        "prettier/prettier": "error",
         "indent": [
             "error",
             2
@@ -26,5 +31,10 @@
             "error",
             "always"
         ]
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
     }
 }
