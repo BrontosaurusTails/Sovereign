@@ -315,7 +315,11 @@
     "wrappy": "^1.0.2",
     "whatwg-fetch": "^2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "tape": "^4.7.0",
+    "watch": "^1.0.2"
+  },
   "scripts": {
     "test": "test",
     "dev": "next"
