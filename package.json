@@ -2,7 +2,7 @@
   "name": "sovereign",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./pages/index.js",
   "dependencies": {
     "abbrev": "^1.1.0",
     "ajv": "^4.11.8",
@@ -316,13 +316,18 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-stage-2": "^6.24.1",
     "cheerio": "^1.0.0-rc.2",
     "tape": "^4.7.0",
     "watch": "^1.0.2"
   },
   "scripts": {
-    "test": "test",
-    "dev": "next"
+    "test": "babel-node components/tests",
+    "dev": "next",
+    "watch": "watch 'clear && npm run -s test' components"
   },
   "repository": {
     "type": "git",
