@@ -7,7 +7,7 @@ import Footer from './index.js';
 
 const render = reactDom.renderToStaticMarkup;
 
-test('Footer component number of links', assert => {
+test('Footer component', assert => {
   const msg = 'should render 1 link';
   const el = <Footer />;
   const $ = dom.load(render(el));

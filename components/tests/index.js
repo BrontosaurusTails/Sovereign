@@ -1,1 +1,1 @@
-import './footer/footer_test';
+import '../footer/footer_test';
