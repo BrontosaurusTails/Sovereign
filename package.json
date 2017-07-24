@@ -320,11 +320,19 @@
     "babel-preset-node6": "^11.0.0",
     "cheerio": "^1.0.0-rc.2",
     "tape": "^4.7.0",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "eslint": "^4.2.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-react": "^7.1.0",
+    "prettier": "^1.5.3"
   },
   "scripts": {
-    "test": "babel-node components/tests",
     "dev": "next",
+    "test": "babel-node components/tests",
+    "eslint": "eslint pages",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "watch": "watch 'clear && npm run -s test' components"
   },
   "repository": {
