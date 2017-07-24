@@ -1,3 +1,14 @@
 import React from 'react';
+import Footer from '../components/footer';
 
-export default () => <div>Hello World!</div>;
+const footerProps = {
+  url: 'https://github.com/BrontosaurusTails/Sovereign',
+  date: new Date().getFullYear()
+}
+
+export default () => (
+  <div>
+    <p>Hello World!</p>
+    <Footer {...footerProps} />
+  </div>
+);
